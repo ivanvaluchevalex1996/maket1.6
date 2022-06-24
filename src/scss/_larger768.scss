@@ -1,0 +1,205 @@
+@media screen and (min-width: 768px) {
+    .header {
+        &--contacts {
+            display: flex;
+        }
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto 0 auto;
+        align-items: flex-start;
+        width: 94%;
+
+        &__wrapper {
+            width: 48%;
+        }
+
+        &__image {
+            margin-top: 0;
+            width: 48%;
+        }
+    }
+
+    .services {
+    
+        margin-top: 24px;
+        
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        
+        }
+        &__list-item{
+            margin-left:22px;
+        }
+    }
+
+    .swiper {
+        display: none;
+    }
+
+    .read-more {
+        display: block;
+    }
+
+
+
+    .desctop {
+        display: flex;
+        max-width: 860px;
+        margin: 0 auto;
+
+        &__slide {
+            margin-bottom: 16px;
+            margin-left: 7px;
+        }
+
+        &__content {
+            max-height: 205px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-top: 24px;
+            align-items: flex-end;
+            overflow: hidden;
+            transition: 0.5s;
+
+            &--click {
+                max-height: 430px;
+                overflow: auto;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .price {
+        display: block;
+        flex-flow: column;
+        margin:50px auto;
+        background-color: $decoration-color-2;
+        border-radius: 5px;
+        max-width: 1050px;
+
+        &__item {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 65px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: $decoration-color-7;
+
+            &:not(:first-child) {
+                &:not(:last-child) {
+                    &:after {
+                        content: '';
+                        z-index: 10;
+                        width: 97%;
+                        height: 1px;
+                        position: absolute;
+                        left: 15px;
+                        bottom: 0;
+                        background-color: $decoration-color-4;
+                    }
+                }
+            }
+
+
+
+            &--content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                width: 100%;
+
+                span {
+                    display: inline-block;
+                }
+
+                span:first-child {
+                    min-width: 348px;
+                    margin-right: 24px;
+                }
+
+                span:nth-child(2) {
+                    min-width: 74px;
+                    margin-right: 22px;
+                }
+            }
+        }
+
+        &__grey {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #7E7E82;
+            mix-blend-mode: normal;
+            opacity: 0.72;
+            background-color: $decoration-color-5;
+
+            &--content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                width: 100%;
+
+                span:first-child {
+                    position: relative;
+                    min-width: 348px;
+                    left: 33px;
+                }
+
+            }
+        }
+
+
+    }
+
+
+    .footer {
+        margin-top: 80px;
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        &__item {
+            &--text {
+                &:last-child {
+                    text-align: end;
+                    max-width: 300px;
+                }
+                &:first-child{
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .modal{
+        &__btn{
+            position: absolute;
+            right: 460px;
+            top: 8px;
+        }
+    }
+
+}
+
+
+
+
+

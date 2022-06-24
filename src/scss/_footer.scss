@@ -1,0 +1,19 @@
+.footer{
+    padding: 16px 16px 19px;
+    &__items{
+        text-align: center;
+
+    }
+    &__item{
+
+        color: $decoration-color-3;
+        &--text{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            opacity: 0.73;
+            
+        }
+    
+    }
+}

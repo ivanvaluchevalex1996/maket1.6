@@ -1,0 +1,47 @@
+.swiper{
+    margin: 16px 0 16px 16px;
+    height: auto;
+
+}
+.swiper-slide{
+    width: 240px;
+    height: 72px;
+
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: $decoration-color-8;
+    opacity: 1;
+    border-radius: 50%;
+    margin: 0 2px;
+    &-active{
+        background-color: $decoration-color-9;
+    }
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $decoration-color-10;
+  }
+
+.swiper__repair{
+    .swiper-slide{
+        width: 240px;
+        height: 160px;
+    }    
+}
+.swiper__price{
+    .swiper-slide{
+        background-color: $decoration-color-2;
+        width: 260px;
+        height: 200px;
+    }    
+}
+
+

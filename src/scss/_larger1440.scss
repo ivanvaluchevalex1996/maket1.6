@@ -1,0 +1,21 @@
+@media screen and (min-width: 1440px){
+    .header{
+        display: none;
+    }
+    .sidebar{
+        position: fixed;
+        &__btn-close{
+            display: none;
+        }
+    }
+    .page{
+        padding-left:320px ;
+    }
+
+    .sidebar{
+        z-index: 1;
+    }
+
+    
+    
+}

@@ -1,0 +1,132 @@
+.sidebar{
+    position: absolute;
+    transform: translate(-100%);
+    transition: 1s;
+    z-index: 10;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $decoration-color-2;
+    box-shadow: 16px 0 52px 0px $shadow;
+
+    &--active{
+        transform: translate(0px);
+    }
+
+    &__navigation{
+        flex-grow: 1;
+        margin-top:22px;    
+    }
+
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        margin:0 24px ;
+        font-style:normal ;
+        outline:none ;
+        text-decoration:none ;
+    }
+
+    &__email{
+        color: $decoration-color-7;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 1.5s;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration:none ;
+
+    }
+  
+
+
+    &__number{
+        color: $decoration-color-7;
+    font-size: 24px;
+    font-weight: bold;
+    transition-duration: 1s;
+    text-decoration:none ;
+    margin-top: 10px;
+
+    }
+
+
+
+    &__header{
+        width: 100%;
+        height:88px;
+        padding: 8px;
+        display: flex;
+        align-items:center;       
+        .image{
+            flex-grow:1;
+            margin: 8px;
+        }
+        .icon{
+            &__check{
+                margin-top: -3px;
+            }
+        } 
+
+    }
+
+    &__footer{
+        margin-top: 24px;
+    }
+    &__icons{
+        display: flex;
+        padding: 8px;
+        margin-left: 6px;
+    }
+}
+
+.icon{
+    height: 40px;
+    margin: 8px;
+}
+
+.list{
+    cursor: pointer;
+    &__item{
+        position: relative;
+        padding: 8px 24px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        display: block;
+
+    &:hover{
+        color: #7E7E82;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0px;
+            border-radius: 0 4px 4px 0;
+            width: 4px;
+            height: 32px;
+            background: $decoration-color-1;
+        }
+    }    
+    }
+    
+}
+
+.language{
+    cursor: pointer;
+    &__item{
+        margin-right: 8px;
+        color:$decoration-color-7;
+    
+    &:hover{
+        color: $decoration-color-3;
+    }    
+    }
+    display: flex;
+    margin-top: 8px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+}
+

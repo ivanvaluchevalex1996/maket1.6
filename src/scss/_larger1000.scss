@@ -1,0 +1,25 @@
+@media screen and (min-width: 1000px){
+    .desctop{
+        max-width: 1118px;
+        margin: 0 auto;
+        &__slide{
+            &--image{
+                width:240px
+            }
+        }
+        &__content{
+            max-height: 220px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            margin-left: 70px;
+            align-items: flex-end;
+            &--click{
+                max-height: 390px;
+                overflow: hidden;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
